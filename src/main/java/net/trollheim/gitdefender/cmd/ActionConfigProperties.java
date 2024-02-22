@@ -16,4 +16,9 @@ public class ActionConfigProperties implements ActionConfig {
     public String get(String key) {
         return properties.getProperty(key);
     }
+
+    @Override
+    public void put(String key, String value) {
+        properties.put(key, value);
+    }
 }
